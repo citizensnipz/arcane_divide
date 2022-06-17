@@ -1,15 +1,15 @@
-import { Box } from '@mui/material';
-import React, {FC} from 'react';
-
-
+import { Box, Container } from "@mui/material";
+import React, { FC } from "react";
+import Post from "../components/post";
 
 const News: FC = () => {
-
-    return (
-        <Box sx={{}}>
-            
-        </Box>
-    )
-}
+  return (
+    <Container>
+      <Box sx={{}}>
+        <Post />
+      </Box>
+    </Container>
+  );
+};
 
 export default News;
