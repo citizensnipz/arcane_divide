@@ -8,11 +8,13 @@ import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import News from "./pages/News";
+import NewsUpdater from "./store/news/newsUpdater";
 
 const App = () => {
   return (
     <ThemeProvider theme={darkTheme}>
       <CssBaseline />
+      <NewsUpdater />
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
