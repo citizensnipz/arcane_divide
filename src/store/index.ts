@@ -1,10 +1,12 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
 import appReducer from './app/appReducer';
+import newsReducer from './news/newsReducer';
 
 
 export const store = configureStore({
   reducer: {
     app: appReducer,
+    news: newsReducer,
   },
 });
 
